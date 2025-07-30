@@ -202,7 +202,7 @@ const FeedbackSection = () => {
                 <div className="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full">
                   <div>
                     <p className="text-gray-800 text-base mb-4 italic leading-relaxed">
-                      "{feedback.message}" {/* Tanda kutip tetap ada sesuai permintaan sebelumnya */}
+                      {feedback.message} {/* PERBAIKAN: Hapus tanda kutip ganda di sini */}
                     </p>
                     <p className="text-gray-600 font-semibold text-sm text-right">
                       — {feedback.name}
