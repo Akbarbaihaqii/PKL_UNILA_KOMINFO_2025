@@ -7,13 +7,13 @@ import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, serverTim
 
 // Ganti dengan konfigurasi Firebase Anda yang didapatkan dari Firebase Console
 const firebaseConfig = {
-  apiKey: "AIzaSyAAtuLIiXeK2kSZLP6tPgSCfCS7r6ex7Ow",
-  authDomain: "portofoliopklkominfo.firebaseapp.com",
-  projectId: "portofoliopklkominfo",
-  storageBucket: "portofoliopklkominfo.firebasestorage.app",
-  messagingSenderId: "61054640358",
-  appId: "1:61054640358:web:d65c3e80df769b6bca1b27",
-  measurementId: "G-QW0J24HPBV"
+  apiKey: "AIzaSyAAtuLIiXeK2kSZLP6tPgSCfCS7r6ex7Ow", // Ganti dengan apiKey Anda
+  authDomain: "portofoliopklkominfo.firebaseapp.com", // Ganti dengan authDomain Anda
+  projectId: "portofoliopklkominfo", // Ganti dengan projectId Anda
+  storageBucket: "portofoliopklkominfo.firebasestorage.app", // Ganti dengan storageBucket Anda
+  messagingSenderId: "61054640358", // Ganti dengan messagingSenderId Anda
+  appId: "1:61054640358:web:d65c3e80df769b6bca1b27", // Ganti dengan appId Anda
+  measurementId: "G-QW0J24HPBV" // Ini opsional, bisa disertakan atau tidak jika tidak pakai Analytics
 };
 
 // Inisialisasi Firebase (hanya sekali)
@@ -144,7 +144,7 @@ const FeedbackSection = () => {
             <div key={feedback.id} className="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between">
               <div>
                 <p className="text-gray-800 text-base mb-4 italic leading-relaxed">
-                  "{feedback.message}"
+                  {feedback.message} {/* PERBAIKAN: Hapus tanda kutip ganda di sini */}
                 </p>
                 <p className="text-gray-600 font-semibold text-sm text-right">
                   — {feedback.name}
