@@ -47,7 +47,7 @@
         id: 4,
           name: 'Dewi Nurhaliza',
         role: 'Front-end Developer - SPBE',
-        imageUrl: '/images/Dewi.png', // Pastikan gambar ini ada dan jernih
+        imageUrl: '/images/dewi.jpg', // Pastikan gambar ini ada dan jernih
         bio: 'Bertanggung jawab atas antarmuka pengguna yang responsif, intuitif, dan ramah pengguna untuk website SPBE Kota Bandar Lampung. Memiliki keahlian dalam menerjemahkan desain menjadi kode program.',
         skills: 'HTML, CSS, Javascript, Bootstrap, Blade, Laravel (front-end), Git',
         experience: 'Banyak',
@@ -59,7 +59,7 @@
         id: 5,
         name: 'Indah Kusuma Ningrum',
         role: 'Back-end Developer - SPBE',
-        imageUrl: '/images/Indah.png', // Pastikan gambar ini ada dan jernih
+        imageUrl: '/images/indah.png', // Pastikan gambar ini ada dan jernih
         bio: 'Bertanggung jawab atas logika sisi server, merancang struktur database, pengembangan fitur CRUD, serta manajemen API pada role admin. Memiliki keahlian dalam merancang arsitektur sistem yang dapat dikembangkan secara fleksibel dan terjamin keamanannya.',
         skills: 'PHP, Laravel, MySQL, JavaScript (ES6+), RESTful API, AJAX, Git',
         experience: 'Banyak',

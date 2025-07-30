@@ -18,7 +18,7 @@ const projects = [
     id: 2,
     title: 'SPBE Kota Bandar Lampung',
     description: 'Sistem Pemerintahan Berbasis Elektronik (SPBE) adalah penyelenggaraan pemerintahan yang memanfaatkan teknologi informasi dan komunikasi untuk memberikan layanan kepada Pengguna SPBE. SPBE ditujukan untuk untuk mewujudkan tata kelola pemerintahan yang bersih, efektif, transparan, dan akuntabel serta pelayanan publik yang berkualitas dan terpercaya.',
-    imageUrl: '/images/SPBE.png', // Menggunakan logo Kominfo, pastikan objectFit="contain" di bawah
+    imageUrl: '/images/spbe.jpg', // Menggunakan logo Kominfo, pastikan objectFit="contain" di bawah
     url: 'https://spbe.bandarlampungkota.go.id/',
   },
 ];
