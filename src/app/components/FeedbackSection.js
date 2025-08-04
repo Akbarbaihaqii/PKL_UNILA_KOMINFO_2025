@@ -123,12 +123,13 @@ const FeedbackSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50 relative"> {/* Tambah relative untuk tombol navigasi */}
+    <section id="feedback-section" className="py-16 bg-gray-50 relative">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-6 text-gray-800">
-          Kritik, Pesan, dan Kesan
+        {/* PERUBAHAN DI SINI: Ukuran font judul dan lebar maksimum deskripsi */}
+        <h2 className="text-1xl md:text-4xl font-extrabold text-center mb-4 text-gray-800 leading-tight"> {/* text-3xl/4xl, mb-4, leading-tight */}
+          Berikan Kritik, Pesan, dan Kesan
         </h2>
-        <p className="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">
+        <p className="text-base md:text-lg text-center text-gray-600 max-w-2xl mx-auto mb-12"> {/* text-base/lg, max-w-2xl */}
           Bagikan pengalaman dan masukan Anda selama PKL di Kominfo Kota Bandar Lampung.
         </p>
 
@@ -190,7 +191,7 @@ const FeedbackSection = () => {
         {/* Carousel Wrapper */}
         <div className="relative overflow-hidden w-full px-4 md:px-0">
           <div
-            className="flex transition-transform duration-700 ease-in-out -mx-4 items-stretch" // Menambah items-stretch
+            className="flex transition-transform duration-700 ease-in-out -mx-4 items-stretch"
             style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}
           >
             {feedbackList.map((feedback) => (
@@ -201,8 +202,8 @@ const FeedbackSection = () => {
               >
                 <div className="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full">
                   <div>
-                    <p className="text-gray-800 text-base mb-4 italic leading-relaxed">
-                      {feedback.message} {/* PERBAIKAN: Hapus tanda kutip ganda di sini */}
+                    <p className="text-gray-800 text-base mb-4 italic leading-relaxed max-h-40 overflow-y-auto pr-2 custom-scrollbar">
+                      "{feedback.message}"
                     </p>
                     <p className="text-gray-600 font-semibold text-sm text-right">
                       — {feedback.name}
@@ -226,8 +227,8 @@ const FeedbackSection = () => {
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 z-30 ml-4 hidden md:block"
                 aria-label="Previous slide"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                 </svg>
               </button>
               <button
@@ -235,8 +236,8 @@ const FeedbackSection = () => {
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition-all duration-300 z-30 mr-4 hidden md:block"
                 aria-label="Next slide"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5 15.75 12l-7.5 7.5" />
                 </svg>
               </button>
             </>

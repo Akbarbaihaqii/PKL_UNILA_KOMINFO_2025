@@ -14,6 +14,12 @@ const galleryImages = [
   { id: 4, src: '/images/6.png', alt: 'Kegiatan PKL Kominfo 4' }, // Pastikan path benar
   { id: 5, src: '/images/7.png', alt: 'Kegiatan PKL Kominfo 5' }, // Pastikan path benar
   { id: 6, src: '/images/2.jpg', alt: 'Kegiatan PKL Kominfo 6' }, // Pastikan path benar
+  { id: 7, src: '/images/8.jpg', alt: 'Kegiatan PKL Kominfo 6' }, // Pastikan path benar
+  { id: 8, src: '/images/9.jpg', alt: 'Kegiatan PKL Kominfo 6' }, // Pastikan path benar
+  { id: 9, src: '/images/10.jpg', alt: 'Kegiatan PKL Kominfo 6' }, // Pastikan path benar
+  { id: 10, src: '/images/11.jpg', alt: 'Kegiatan PKL Kominfo 6' }, // Pastikan path benar
+ // { id: 11, src: '/images/2.jpg', alt: 'Kegiatan PKL Kominfo 6' }, // Pastikan path benar
+
   // Tambahkan lebih banyak foto sesuai kebutuhan
 ];
 
