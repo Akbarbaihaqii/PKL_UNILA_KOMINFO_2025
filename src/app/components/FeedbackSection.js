@@ -125,11 +125,11 @@ const FeedbackSection = () => {
   return (
     <section id="feedback-section" className="py-16 bg-gray-50 relative">
       <div className="container mx-auto px-4">
-        {/* PERUBAHAN DI SINI: Ukuran font judul dan lebar maksimum deskripsi */}
-        <h2 className="text-1xl md:text-4xl font-extrabold text-center mb-4 text-gray-800 leading-tight"> {/* text-3xl/4xl, mb-4, leading-tight */}
-          Berikan Kritik, Pesan, dan Kesan
+        {/* PERBAIKAN DI SINI: Ukuran font judul dan lebar maksimum deskripsi */}
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-4 text-gray-800 leading-tight"> {/* text-3xl di mobile, 4xl di md ke atas */}
+          Kritik, Pesan, dan Kesan
         </h2>
-        <p className="text-base md:text-lg text-center text-gray-600 max-w-2xl mx-auto mb-12"> {/* text-base/lg, max-w-2xl */}
+        <p className="text-base md:text-lg text-center text-gray-600 max-w-xl mx-auto mb-12"> {/* text-base di mobile, lg di md ke atas, max-w-xl */}
           Bagikan pengalaman dan masukan Anda selama PKL di Kominfo Kota Bandar Lampung.
         </p>
 
@@ -202,8 +202,8 @@ const FeedbackSection = () => {
               >
                 <div className="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full">
                   <div>
-                    <p className="text-gray-800 text-base mb-4 italic leading-relaxed max-h-40 overflow-y-auto pr-2 custom-scrollbar">
-                      "{feedback.message}"
+                    <p className="text-gray-800 text-base mb-4 italic leading-relaxed">
+                      &quot;{feedback.message}&quot; {/* Menggunakan entitas HTML */}
                     </p>
                     <p className="text-gray-600 font-semibold text-sm text-right">
                       — {feedback.name}
